@@ -1,0 +1,48 @@
+:root {
+  --lightred: rgb(246, 98, 98);
+  --commonred: rgb(235, 80, 78);
+  --whfont: rgb(253, 254, 253);
+  --commonblack: rgb(35, 35, 37);
+  --rdfont: rgb(197, 85, 76);
+  --commongreen: rgb(108, 195, 113);
+  --commongrey: rgb(240, 240, 240);
+  --grfont: rgb(97, 97, 97);
+  --rdfontlight: rgb(194, 101, 103);
+  --altred: rgb(237, 81, 76);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+.logo {
+  display: grid;
+  grid-template-areas:
+    "logo ltitle"
+    "ltext ltext";
+}
+.logo i {
+  grid-area: logo;
+  align-self: center;
+}
+.logo-title {
+  grid-area: ltitle;
+  color: var(--whfont);
+}
+.logo-text {
+  grid-area: ltext;
+}
+.fsection-header {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 2fr 3fr;
+  background-color: var(--lightred);
+}
